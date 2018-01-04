@@ -1,0 +1,18 @@
+
+main_test_delete_leak: main_test_delete_leak.o linked_list.o main_test_delete memory_leak_delete_test.h main_test_delete
+	gcc -g -o main_test_delete_leak  main_test_delete_leak.o linked_list.o 
+
+main_test_delete_leak.o: main_test_delete_leak.c linked_list.h  nuss_linked_list.h memory_leak_delete_test.h
+	gcc -g -c main_test_delete_leak.c
+
+
+main_test_delete: main_test_delete.c  memory_leak_delete_test.h linked_list.h
+	gcc -g -o main_test_delete main_test_delete.c
+
+linked_list.o: linked_list.c linked_list.h 
+	gcc -g -c linked_list.c
+
+clean:
+	rm -f *.o
+	rm -f main_test_delete_leak main_test_delete 
+

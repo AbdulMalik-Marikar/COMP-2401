@@ -1,0 +1,13 @@
+purpose:maipulate employee record useing the linked list implementation
+
+Developed by Abdul-Malik Marikar Nov 26th 2017
+
+organized: organized by linking certain files in the makefile
+
+run:make
+    ./main_tester
+
+issues: bubblesort does not work
+
+instructions: run program as specified above
+	
